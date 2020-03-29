@@ -6,6 +6,10 @@ public class Speciality extends BaseEntity {
     public Speciality() {
     }
 
+    public static Speciality in(String description){
+        return new Speciality(description);
+    }
+
     public Speciality(String description) {
         this.description = description;
     }
